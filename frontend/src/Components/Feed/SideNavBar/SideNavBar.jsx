@@ -1,0 +1,31 @@
+import { Link, useNavigate } from "react-router-dom";
+import { CgProfile } from "react-icons/cg";
+import {BiExit} from "react-icons/bi";
+import "./navbar.css";
+import { useDispatch, useSelector } from "react-redux";
+import { logOutUser } from "../../../redux/apiRequests";
+const SideNavBar = (props) => {
+  const { id } = props;
+  const user = useSelector((state) => state.auth.login?.currentUser);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const logOut = () => {
+    logOutUser(dispatch, user?.accessToken, user?._id, navigate);
+  };
+  return (
+    <nav className="navbar-container">
+      <div className="navbar-profile">
+        <Link to={`/user/${id}`}>
+          <CgProfile size="24px" color="grey" className="navbar-profile-icon" />
+          My profile
+        </Link>
+      </div>
+      <div className="navbar-logout" onClick={logOut}>
+      <BiExit color="grey" size="24px" className="navbar-logout-icon"/>
+        Log out{" "}
+      </div>
+    </nav>
+  );
+};
+
+export default SideNavBar;

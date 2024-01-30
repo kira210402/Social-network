@@ -1,0 +1,226 @@
+.makepost-container {
+  min-height: 100vh;
+  background-color: #292929;
+  padding: 0.75rem 1.25rem 0 1.25rem;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+}
+.makepost-navigation {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.25rem;
+}
+
+.makepost-save {
+  cursor: pointer;
+}
+.makepost-desc {
+  background-color: #535353;
+  color: white;
+  border: none;
+  font-size: 1.15rem;
+  font-family: "Noto Sans", sans-serif;
+  padding: 0.25rem 0.5rem 4rem 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.makepost-title {
+  height: 50px;
+  background-color: #535353;
+  color: white;
+  border: none;
+  font-size: 1.15rem;
+  font-family: "Noto Sans", sans-serif;
+  padding: 0.25rem 0.5rem 4rem 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.makepost-tags {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: space-between;
+}
+.makepost-save-bottom {
+  text-align: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.submit {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  border-radius: 12px;
+  width: 90px;
+  height: 36px;
+  background-color: #0386d1;
+}
+.makepost-tags > button {
+  font-weight: 700;
+  background-color: #535353;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  padding: 0.4rem;
+  font-family: "Noto Sans", sans-serif;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.makepost-tags-selected-None {
+  box-shadow: 0px 0px 10px 4px rgb(209, 209, 209);
+}
+.makepost-tags-selected-NSFW {
+  box-shadow: 0px 0px 10px 4px rgb(209, 66, 47);
+}
+.makepost-tags-selected-Mood {
+  box-shadow: 0px 0px 10px 4px rgb(1, 111, 201);
+}
+.makepost-tags-selected-Shitpost {
+  box-shadow: 0px 0px 10px 4px rgb(197, 186, 23);
+}
+.makepost-tags-selected-Meme {
+  box-shadow: 0px 0px 10px 4px rgb(183, 47, 224);
+}
+input[type="file"] {
+  display: none;
+}
+.makepost-file-label {
+  background-color: #0386d1;
+  margin: 1rem 0;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 40%;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.makepost-file-label::before {
+  font-size: 1rem;
+  content: "Upload image";
+}
+.makepost-img-preview > img {
+  max-width: 300px;
+  max-height: 200px;
+  object-fit: contain;
+}
+.makepost-img-preview {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  position: relative;
+  object-fit: contain;
+  max-width: 300px;
+  max-height: 200px;
+}
+.remove-preview {
+  cursor: pointer;
+  background-color: black;
+  font-size: 1.25rem;
+  padding: 0rem 0.5rem;
+  border-radius: 8px;
+  right: -5%;
+  top: -5%;
+  position: absolute;
+}
+
+/* Post.css */
+
+.posts {
+  background-color: rgb(49, 49, 49);
+  margin-bottom: 1rem;
+  padding: 1rem 1rem 1rem 2rem;
+  font-family: "Noto Sans", sans-serif;
+}
+.posts-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.posts-tags {
+  color: white;
+  border: none;
+  margin: 0.75rem 0 0.75rem 0;
+  font-size: 0.75rem;
+  font-family: "Noto Sans", sans-serif;
+  border-radius: 14px;
+  width: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.posts-tags-NSFW {
+  background-color: rgb(209, 66, 47);
+}
+.posts-tags-Mood {
+  background-color: rgb(1, 111, 201);
+}
+.posts-tags-Quotes {
+  background-color: rgb(183, 47, 224);
+}
+.posts-tags-Shitpost {
+  background-color: rgb(197, 186, 23);
+}
+.posts-tags-None {
+  background-color: grey;
+}
+.comments-title {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.comments-opened {
+  text-align: start;
+}
+.comments-interact {
+  display: flex;
+  margin-bottom: 2rem;
+  flex-direction: row;
+  align-items: center;
+}
+f.comments-interact > form {
+  max-width: 100%;
+
+}
+.comment-input {
+  font-size: 1rem;
+  margin-left: 1rem;
+  background-color: #3b3b3b;
+  color: white;
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+  border-radius: 12px;
+}
+.comment-input:focus {
+  outline: none;
+  box-shadow: 0px 0px 12px 1px rgb(0, 204, 160);
+}
+.user-avatar {
+  cursor: pointer;
+  width: 40px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.post-image {
+  margin-top: 1rem;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.search-bar {
+  text-align: start;
+  margin-left: 1rem;
+  font-size: 1rem;
+  max-width: 100%;
+  align-self: center;
+}

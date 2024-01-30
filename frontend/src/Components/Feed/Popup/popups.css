@@ -1,0 +1,20 @@
+
+
+.popups-h2{
+    width: 99%;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color:rgb(190, 190, 190);
+}
+.popups-close {
+    cursor: pointer;
+    align-self: flex-end;
+    margin-right: 1rem;
+    color:rgb(190, 190, 190);
+}
+.delete{
+    background-color: rgb(248, 69, 69);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 20px;
+}

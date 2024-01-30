@@ -1,0 +1,95 @@
+header {
+  height: 300px;
+ 
+}
+.info-edit {
+  cursor: pointer;
+  align-self: flex-end;
+  border: 2px solid white;
+  padding: 0.45rem;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.follow{
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 14px;
+  padding: 0.5rem;
+  font-weight: 700;
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding-left: 2rem;
+  color: white;
+}
+.info-displayname {
+  width: 100%;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.info-username {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  font-weight: 400;
+}
+.info-age,
+.info-about {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-ava {
+  width: 85px;
+  height: 130px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.go-back {
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+}
+
+.edit-goback{
+  margin: 1rem 1.15rem 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.follow-container{
+  z-index: 10;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: "Inter",sans-serif;
+}
+.follower {
+  flex:1;
+  margin:0.5rem 0;
+}
+.following{
+  flex:1;
+  margin:0.5rem 0;
+}
+.follower-num, .following-num {
+  font-weight: 700;
+}
+.follower-title, .following-title{
+  color:#a1a1a4;
+}
+.chat-follow-container{
+  display:flex;
+  align-items:center;
+  gap:1.5rem;
+}
+.chat{
+  cursor:pointer;
+}
